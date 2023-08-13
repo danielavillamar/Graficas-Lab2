@@ -242,6 +242,7 @@ class Renderer(object):
                         if z < self.zbuffer[x][y]:
                             self.zbuffer[x][y] = z
 
+                            # OJO PARA CREAR SHADERS
                             if self.fragmentShader != None:
                                 colorP = self.fragmentShader(
                                     texture=self.activeTexture,
